@@ -1,0 +1,27 @@
+PROINFO1234567890	PROD1234567870	SUP1234567890	IND1234567890	NULL
+PROINFO1234567892	PROD1234567891	SUP1234567891	IND1234567890	NULL
+PROINFO1234567891	PROD1234567890	SUP1234567892	NULL	CONSUM1234567890
+
+
+PROD1234567870	Advanced Widget	High-tech widget for advanced applications	99.99
+PROD1234567890	Advanced Widget	High-tech widget for advanced applications	99.99
+
+IND1234567890	High-Tech Electronics	High-tech electronics for industrial applications.
+
+CONSUM1234567890	Consumer Product A	Description of Consumer Product A
+
+SUP1234567890	Sanjeev pvt	Jay	sanjeev@gmail.com	1234567890
+SUP1234567891	Global Corp	Bob Smith	bob.smith@globalcorp.com	9876543211
+SUP1234567892	Tech Gadgets Inc.	Charlie Brown	charlie.brown@techgadgets.com	9876543212
+
+
+INV1234567891	PROD1234567890	20	2024-07-30 20:13:13.357
+INV1234567892	PROD1234567890	56	2024-07-30 20:17:25.090
+INV1234567893	PROD1234567890	39	2024-07-30 20:18:38.677
+
+WH001	Central Warehouse	123 Main St, Coimbatore	0	5000
+WH002	Northside Depot	456 Elm St, Coimbatore	0	3000
+WH003	Southside Storage	789 Oak St, Coimbatore	0	7000
+WH004	Eastside Facility	321 Pine St, Coimbatore	0	5000
+WH005	Westside Hub	456 New Address, Coimbatore, TS, 67890	0	6000
+
