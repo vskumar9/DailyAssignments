@@ -1968,18 +1968,6 @@ BEGIN
         WHERE (@shipmentId IS NULL OR t.shipmentId = @shipmentId)
           AND (@orderId IS NULL OR s.orderId = @orderId);
     END
-
-    -- Update transportation details if new values are provided
-    IF @newShipmentStatus IS NOT NULL OR @newCarrierID IS NOT NULL
-    BEGIN
-        UPDATE t
-        SET t.shipmentStatus = @newShipmentStatus,
-            t.carrierID = ISNULL(@newCarrierID, t.carrierID)
-        FROM transport t
-        INNER JOIN shipment s ON t.shipmentId = s.shipmentId
-        WHERE (@shipmentId IS NOT NULL AND t.shipmentId = @shipmentId)
-          AND (@orderId IS NOT NULL AND s.orderId = @orderId);
-    END
 END;
 
 drop procedure ManageTransportationDetails;
