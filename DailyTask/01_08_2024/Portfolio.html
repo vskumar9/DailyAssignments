@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8" />
+    <link rel="icon" href="./profolio.png" alt="LOGO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Sanjeev Portfolio"/>  
+    <title>Sanjeev Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+<!-- Nav : Begin -->
+    <nav class="navbar">
+        <img src="assets/profolio.png" alt="Logo" class="logo">
+        <div class="desktopMenu">
+            <a href="#intro" class="desktopMenuListItem">Home</a>
+            <a href="#About" class="desktopMenuListItem">About</a>
+            <a href="#Education" class="desktopMenuListItem">Education</a>
+            <a href="#skills" class="desktopMenuListItem">Skills</a>
+            <a href="#Projects" class="desktopMenuListItem">Projects</a>
+        </div>
+        <button class="desktopMenuBtn" onclick="scrollToContact()">
+            <img src="assets/mail_contact.svg" alt="Contact" class="desktopMenuIcon"> Contact Me
+        </button>
+        <img src="assets/Men.png" alt="Menu" class="mobMenu" onclick="toggleMenu()">
+        <div class="navMenu" id="navMenu">
+            <a href="#intro" class="listItem" onclick="closeMenu()">Home</a>
+            <a href="#About" class="listItem" onclick="closeMenu()">About</a>
+            <a href="#Education" class="listItem" onclick="closeMenu()">Education</a>
+            <a href="#skills" class="listItem" onclick="closeMenu()">Skills</a>
+            <a href="#Projects" class="listItem" onclick="closeMenu()">Projects</a>
+            <a href="#contact" class="listItem" onclick="closeMenu()">Contact</a>
+        </div>
+    </nav>
+<!-- Nava : End -->
+<!-- Intro : Begin -->
+    <section id="intro">
+        <div class="introContent">
+            <span class="hello">Hello,</span>
+            <span class="introText">
+                I'm <span class="introName">Sanjeev Kumar</span> <br />
+                <div class="scroller">
+                    <span>Software Engineering</span>
+                </div>
+            </span>
+            <p class="introPara">I am a skilled and passionate web developer with experience in different tools and technologies.</p>
+            <div>
+                <a href="#contact">
+                    <button class="btn">
+                        <img src="assets/work-case.svg" alt="Hire me" class="btnImg" /> Hire me
+                    </button>
+                </a>
+                <a href="assets/SANJEEV_KUMAR_MCA.pdf" download="SANJEEV_KUMAR_MCA" target="_blank" rel="noreferrer">
+                    <button class="btn">
+                        <img src="assets/resume.svg" alt="resume" class="btnImg" /> resume
+                    </button>
+                </a>
+            </div>
+        </div>
+        <img src="assets/Image_1.png" alt="Profile" class="bg" />
+    </section>
+<!-- Intro : End -->
+ <!-- About : Begin -->
+ <div id="About" class="about">
+    <h1>About Us</h1>
+    <p>
+        Welcome to my portfolio. Hello, I'm Vaddi Sanjeev Kumar, a dedicated
+        software developer with expertise in web development and proficiency in
+        various programming languages and frameworks. I have a strong track
+        record of optimizing user experiences and system performance through
+        responsive design, efficient data retrieval, and database optimization.
+        In my recent internship at Edunet Foundation (IBM SkillsBuild), I worked
+        on a Front-End Cloning App using HTML, CSS, Bootstrap, JavaScript, and
+        jQuery. I improved user experience and responsiveness, integrated APIs,
+        and ensured consistent performance across various devices. As a Django
+        Developer Intern at Shiash Info Solutions Private Limited, I contributed
+        to an Equipment Leasing project, streamlining customer operations,
+        improving efficiency, and enhancing data security. I achieved a increase
+        in customer operation efficiency and reduced errors by 25%. During my
+        time at Mood Indigo IIT, Bombay, I successfully completed an E-Commerce
+        Shopping Website project using PHP, implementing user authentication,
+        and optimizing web performance, resulting in a 30% increase in customer
+        conversion rate. I hold an MCA degree from MITS, JNTU Anantapur, and a
+        B.Sc. in Computer Science from SCNR Govt Degree College. I've also
+        earned certifications in Java Application Development, Google Data
+        Analytics, Front-End Development (Edunet – IBM SkillBuild), Python
+        Programming, and AWS Cloud Architecture. With strong problem-solving
+        skills, technical expertise, and a collaborative mindset, I am confident
+        in my ability to contribute to impactful solutions and success in any
+        organization.
+    </p>
+</div>
+<!-- About : End -->
+<!-- Education : Begin -->
+<section id="Education">
+    <span class="eduTitle">Education</span>
+    <div class="eduBars">
+        <img src="assets/graduation-cap-solid.svg" alt="Graduation Cap" class="eduBarImg" />
+        <div class="eduBar">
+            <div class="eduBarText">
+                <h3>MCA (Master of Computer Application) in Computer Applications (2023)</h3>
+                <p>MITS - Madanapalle, JNTU Anantapur, Andhra Pradesh</p>
+            </div>
+            <div class="eduBarText">
+                <h3>B.Sc. (Bachelor of Science) in Computer Science (2021)</h3>
+                <p>SCNR Govt Degree College - Proddatur, YV University, Andhra Pradesh</p>
+            </div>
+            <div class="eduBarText">
+                <h3>MPC (Maths-Physics-Chemistry) 10+2 (2018)</h3>
+                <p>Govt Junior College - Proddatur, BIEAP, Andhra Pradesh</p>
+            </div>
+            <div class="eduBarText">
+                <h3>10<sup>th</sup> (2016)</h3>
+                <p>Sri Saraswathi Vidya Mandir High School - Proddatur, S.S.C, Andhra Pradesh</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Education : End -->
+<!-- Skills : Begin -->
+<section id="skills">
+    <span class="skillTitle">Professional Summary</span>
+    <span class="skillDesc">
+        I am a skilled and passionate web developer with experience in different
+        tools and technologies. I am an experienced and dedicated software
+        developer with expertise in web development and a strong proficiency in
+        various programming languages and frameworks.
+    </span>
+    <div class="skillBars">
+        <div class="skillBar">
+            <img src="assets/programming.svg" alt="Programming" class="skillBarImg" />
+            <div class="skillBarText">
+                <h2>Programming</h2>
+                <p>
+                    I have a strong grasp of the fundamentals of Python programming and Core Java,
+                    including data types, control structures, and functions. A web
+                    framework is a software framework that is designed to support the
+                    development of web applications. Django is the most popular Python
+                    web framework and I have a good knowledge of it, including Django ORM.
+                </p>
+            </div>
+        </div>
+        <div class="skillBar">
+            <img src="assets/web-design.svg" alt="Web Design" class="skillBarImg" />
+            <div class="skillBarText">
+                <h2>Web Design</h2>
+                <p>
+                    I have strong knowledge of HTML, CSS, and JavaScript, which are the three
+                    core technologies, and frameworks like Bootstrap and jQuery. I build
+                    responsive websites that look great on desktops, tablets, and smartphones. 
+                    UX design is about creating digital products that are useful, easy to 
+                    use, and delightful to interact with, and SEO is the process of optimizing 
+                    structure to improve its visibility.
+                </p>
+            </div>
+        </div>
+        <div class="skillBar">
+            <img src="assets/backEnd.svg" alt="BackEnd" class="skillBarImg" />
+            <div class="skillBarText">
+                <h2>BackEnd</h2>
+                <p>
+                    I have strong knowledge of backend technologies like Django and JDBC, and 
+                    databases such as MySQL and MongoDB for handling CRUD operations.
+                </p>
+            </div>
+        </div>
+        <div class="skillBar">
+            <img src="assets/version-controll.svg" alt="Version Control System" class="skillBarImg" />
+            <div class="skillBarText">
+                <h2>Version Control System</h2>
+                <p>
+                    I have solid knowledge of version control, including branching, merging, and 
+                    conflict resolution, using tools like Git (Distributed Version Control Systems 
+                    or DVCS). I also have skills in CI/CD (Continuous Integration/Continuous Deployment).
+                </p>
+            </div>
+        </div>
+        <div class="skillBar">
+            <img src="assets/problem-sloving.svg" alt="Problem-Solving" class="skillBarImg" />
+            <div class="skillBarText">
+                <h2>Problem-Solving</h2>
+                <p>
+                    My problem-solving skills include parallel thinking, which is crucial for optimal 
+                    performance. This involves considering multiple aspects of a problem simultaneously 
+                    and evaluating different perspectives.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills : End -->
+<!-- Work : Begin -->
+<section id="works">
+    <h2 class="worksTitle">My Certifications</h2>
+    <span class="worksDesc">
+        In pursuit of excellence, I have earned several certifications, each
+        strategically chosen to enhance my skills and contribute to my
+        professional growth. Noteworthy certifications include Java Application
+        Development, Google Data Analytics, Front End Development, and AWS Cloud
+        Architect. These certifications, coupled with practical experiences,
+        showcase my commitment to staying at the forefront of industry trends
+        and my ability to apply diverse skill sets to real-world challenges.
+        Explore the list for a comprehensive insight into my continuous pursuit
+        of knowledge and expertise.
+    </span>
+    <div class="worksImgs">
+        <div id="frame">
+            <div id="border">
+                <img src="assets/certificates/SSRTIC_CERTIFICATE .jpg" alt="SSRTIC Certificate" class="certificate" />
+            </div>
+        </div>
+        <div id="frame">
+            <div id="border">
+                <img src="assets/certificates/Edunet.png" alt="Edunet Certificate" class="certificate" />
+            </div>
+        </div>
+        <div id="frame">
+            <div id="border">
+                <img src="assets/certificates/FoundationProjectManagement.png" alt="Foundation Project Management Certificate" class="certificate" />
+            </div>
+        </div>
+        <div id="frame">
+            <div id="border">
+                <img src="assets/certificates/FrontEndDevelopment.png" alt="Front End Development Certificate" class="certificate" />
+            </div>
+        </div>
+        <!-- Uncomment if needed -->
+        <!-- <div id="frame">
+            <div id="border">
+                <img src="assets/certificates/HackerRank_certificate.png" alt="HackerRank Certificate" class="certificate" />
+            </div>
+        </div> -->
+    </div>
+    <a class="worksBtn" href="/Portfolio.html">See More</a>
+</section>
+<!-- Work : End -->
+ <!-- Contact and Project : Begin -->
+ <section id="Projects">
+    <div id="clients">
+        <h1 class="contactPageTitle1">My Projects</h1>
+        <p class="clientDesc">
+            In my recent project, I developed a robust e-commerce website using cutting-edge technologies such as React.js and Node.js, showcasing my proficiency in full-stack development.
+            I led a cross-functional team in the successful implementation of a data analytics solution, utilizing Python and SQL to derive actionable insights and optimize business processes.
+            As a skilled machine learning engineer, I designed and implemented a natural language processing (NLP) model, enhancing the accuracy of sentiment analysis in customer feedback for a major client.
+        </p>
+        <div class="clientImgs">
+            <div class="projectLink">
+                <a href="https://github.com/vskumar9/VISHVENA-TECHNO-SOLUTIONS-TASK-Job-web-site-" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/DjangoJob-web-site-.png" alt="Django Project" class="clientImg" />
+                </a>
+                <a href="https://github.com/vskumar9/Supply-Chain-Management-System" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/javaProject.png" alt="Java Project" class="clientImg" />
+                </a>
+                <a href="https://github.com/vskumar9/IBM-Skills-Build-Internship_Cloning_website" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/pixelParadise.png" alt="Pixel Paradise" class="clientImg" />
+                </a>
+                <a href="https://github.com/vskumar9/web/tree/master/E-commerce" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/E-CommerceWebsite.png" alt="E-Commerce Website" class="clientImg" />
+                </a>
+                <a href="https://github.com/vskumar9/ShishaProject_EQUIPMENT_LEASING" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/equipmentLeasing.png" alt="Equipment Leasing" class="clientImg" />
+                </a>
+                <a href="https://github.com/vskumar9/MajorProject" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/majorProject.png" alt="Major Project" class="clientImg" />
+                </a>
+                <a href="https://github.com/vskumar9/Mini-Project__MITS__Virtual_Personal_Assistance" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Projects/miniProject.png" alt="Mini Project" class="clientImg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1 class="contactPageTitle2">Contact Me</h1>
+        <span class="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
+        <form class="contactForm" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" class="name" placeholder="Your Name" name="from_name" required />
+            <input type="email" name="from_email" class="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" class="msg" required></textarea>
+            <button type="submit" class="submitBtn">Submit</button>
+            <div class="links">
+                <a href="https://github.com/vskumar9" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/github.svg" alt="GitHub" class="link" />
+                </a>
+                <a href="https://www.linkedin.com/in/vaddi-sanjeev-kumar-95402b231/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/linkedin.svg" alt="LinkedIn" class="link" />
+                </a>
+                <a href="https://www.hackerrank.com/profile/V_SANJEEV_KUMAR" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/hackerrank.png" alt="HackerRank" class="link" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCkk4Txv0aYmz0B8UzyWbY4g" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/youtube.svg" alt="YouTube" class="link" />
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Contact and Project : End -->
+
+<!-- Footer : Begin -->
+<footer class="footer">
+    Copyright &#169; <script>document.write(new Date().getFullYear())</script> V Sanjeev Kumar. All rights reserved.
+</footer>
+<!-- Footer : End -->
+
+</body>
+</html>
