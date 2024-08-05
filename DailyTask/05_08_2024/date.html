@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Date Every 2ms</title>
+</head>
+<body>
+    <div id="dateTime">Loading...</div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('dateTime').textContent = now;
+        }
+
+        // Update the date and time every 2 milliseconds
+        setInterval(updateDateTime, 2);
+    </script>
+</body>
+</html>
