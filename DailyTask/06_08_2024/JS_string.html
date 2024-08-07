@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Substring vs Substr</title>
+    <script>
+      window.onload = function () {
+        var str = "The world is wonderful";
+        console.log("Using substr:");
+        console.log(str.substr(4, 5)); // world
+        console.log(str.substr(-9, 5)); // wonde
+        console.log("Using substring:");
+        console.log(str.substring(4, 9)); // world
+        console.log(str.substring(-9, 5)); // The w (negative index treated as 0)
+      };
+    </script>
+  </head>
+</html>

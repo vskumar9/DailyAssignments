@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .relative {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+      }
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="absolute">Absolute</div>
+      <div class="relative">Relative</div>
+      <div class="fixed">Fixed</div>
+    </div>
+  </body>
+</html>
