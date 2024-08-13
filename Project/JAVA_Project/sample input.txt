@@ -1,0 +1,6 @@
+===========================================================
+PRODDUCT SAMPLE DATA
+-----------------------------------------------------------
+Product1:description:1000:SUPP248122212691258:goods1:goodsDescription
+
+Product2:description2:2000:SUPP248122212693457:goods1:goodsDescription
