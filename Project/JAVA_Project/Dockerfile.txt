@@ -1,0 +1,10 @@
+FROM openjdk:17-jdk-alpine
+WORKDIR /app
+COPY target/product-management.jar product-management.jar
+ENTRYPOINT ["java", "-jar", "product-management.jar"]
+
+#docker build -t product-management .
+#docker run -it product-management
+
+#docker run -it --entrypoint /bin/sh product-management
+#java -jar product-management.jar

@@ -83,6 +83,7 @@ public class ProductManagementApplication {
 		} catch(Exception e) {
 			System.out.println();
 			System.out.println("Something error. Please try again.....");
+			System.out.println("An error occurred: " + e.getMessage());
 			System.out.println();
 			main(args);
 		} 
