@@ -1,10 +1,28 @@
-FROM openjdk:17-jdk-alpine
+
+# Use an official OpenJDK image as the base image
+FROM openjdk:17-oracle
+
+# Set the working directory inside the container
 WORKDIR /app
-COPY target/product-management.jar product-management.jar
-ENTRYPOINT ["java", "-jar", "product-management.jar"]
 
-#docker build -t product-management .
-#docker run -it product-management
+# Copy the JAR file into the container
+COPY Product.jar /app/Product.jar
 
-#docker run -it --entrypoint /bin/sh product-management
-#java -jar product-management.jar
+#COPY ./file.sh /
+#RUN chmod 755 /file.sh
+#ENTRYPOINT [ "/file.sh" ]
+# Specify the command to run the JAR file
+CMD ["java", "-jar", "Product.jar"]
+
+
+
+#FROM openjdk:17-jdk-alpine
+#WORKDIR /app
+#COPY target/Product.jar Product.jar
+#ENTRYPOINT ["java", "-jar", "Product.jar"]
+
+#docker build -t Product.jar .
+#docker run -it Product.jar
+
+#docker run -it --entrypoint /bin/sh Product
+#java -jar Product.jar
