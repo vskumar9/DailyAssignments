@@ -13,12 +13,11 @@ import com.productManagement.service.ProductService;
 public class ProductManagementApplication {
 
 
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		
 		ProductService productService = new ProductService();
 		System.out.println("----------WELCOME TO ADMIN DASHBOARD----------");
-		try {
+		try(Scanner sc = new Scanner(System.in)) {
 			char in1;
 			do {
 				System.out.print("a. Add Products\nb. Delete Products\nc. Get Products\nd. Update Products\ne. Exit\nEnter your choice: ");
@@ -85,7 +84,6 @@ public class ProductManagementApplication {
 			System.out.println();
 			System.out.println("Something error. Please try again.....");
 			System.out.println();
-			sc.nextLine();
 			main(args);
 		} 
 	}
